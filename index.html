@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Home16</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="https://use.fontawesome.com/306f18f828.js"></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -14,42 +15,120 @@
                 <button type="button" class="show-menu"></button>
             </div>
             <ul class="menu-list">
-                <li><a href="#">Accordion</a></li>
-                <li><a href="#">Modal</a></li>
-                <li><a href="#">Tabs</a></li>
-                <li><a href="#">Tooltip</a></li>
+                <li><a href="#accordion">Accordion</a></li>
+                <li><a href="#modal-block">Modal</a></li>
+                <li><a href="#tabs">Tabs</a></li>
+                <li><a href="#tooltip-block">Tooltip</a></li>
             </ul>
         </nav>
     </div>
 </header>
 <main>
-    <div class="accordion">
+    <div id="accordion">
         <div class="my-container">
             <div class="accordion-container">
                 <h2>Accordion #1</h2>
                 <div class="accordion-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id libero non quod reprehenderit saepe?
-                    Cupiditate debitis eum facere necessitatibus officiis! Eos error excepturi explicabo nesciunt numquam
+                    Cupiditate debitis eum facere necessitatibus officiis! Eos error excepturi explicabo nesciunt
+                    numquam
                     quia sunt, voluptatem voluptates?
                 </div>
                 <h2>Accordion #2</h2>
                 <div class="accordion-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id libero non quod reprehenderit saepe?
-                    Cupiditate debitis eum facere necessitatibus officiis! Eos error excepturi explicabo nesciunt numquam
+                    Cupiditate debitis eum facere necessitatibus officiis! Eos error excepturi explicabo nesciunt
+                    numquam
                     quia sunt, voluptatem voluptates?
                 </div>
                 <h2>Accordion #3</h2>
                 <div class="accordion-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id libero non quod reprehenderit saepe?
-                    Cupiditate debitis eum facere necessitatibus officiis! Eos error excepturi explicabo nesciunt numquam
+                    Cupiditate debitis eum facere necessitatibus officiis! Eos error excepturi explicabo nesciunt
+                    numquam
                     quia sunt, voluptatem voluptates?
                 </div>
             </div>
         </div>
     </div>
+
+    <div id="modal-block">
+        <div class="my-container">
+            <button type="button" class="show-modal">Modal Window</button>
+            <div class="modal-window clearfix">
+                <i class="fa fa-times fa-2x modal-close" aria-hidden="true"></i>
+                <form action="#">
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="Login">
+                        </li>
+                        <li>
+                            <input type="password" placeholder="Password">
+                        </li>
+                        <li>
+                            <input type="button" value="Sign In">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="overlay"></div>
+        </div>
+    </div>
+
+    <div id="tabs">
+        <div class="my-container">
+            <div class="tabs-container">
+                <ul class="tab-list">
+                    <li><a href="#tab-1" class="active">First</a></li>
+                    <li><a href="#tab-2">Second</a></li>
+                    <li><a href="#tab-3">Third</a></li>
+                </ul>
+                <div id="tab-1">
+                    <h3>First</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi consequuntur eaque id
+                    veritatis. Accusantium asperiores dolores et excepturi iusto, magnam nemo nobis, pariatur quia
+                    quisquamtempora vel, veniam voluptatibus?Accusantium asperiores dolores et excepturi iusto, magnam
+                    nemonobis, pariatur quia quisquam tempora vel, veniam voluptatibus?
+                </div>
+                <div id="tab-2">
+                    <h3>Second</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi consequuntur eaque id
+                    veritatis. Accusantium asperiores dolores et excepturi iusto, magnam nemo nobis, pariatur quia
+                    quisquam tempora vel, veniam voluptatibus?asperiores dolores et excepturi iusto, magnam nemo nobis,
+                    pariatur
+                    quia quisquam tempora vel, veniam voluptatibus?sit amet, consectetur adipisicing elit. Aliquam
+                    commodi
+                    consequuntur eaque id
+                </div>
+                <div id="tab-3">
+                    <h3>Third</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi consequuntur eaque id
+                    veritatis. Accusantium asperiores dolores et excepturi iusto, magnam nemo nobis, pariatur quia
+                    quisquam
+                    tempora vel, veniam voluptatibus?et excepturi iusto, magnam nemo nobis, pariatur quia quisquam
+                    tempora vel, veniam voluptatibus?asperiores dolores et excepturi iusto, magnam nemo nobis, pariatur
+                    quia
+                    quisquam tempora vel
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tooltip-block">
+        <div class="my-container">
+            <a href="#" class="tooltip-link" data-tip="this is the tip!">First link</a>
+            <a href="#" class="tooltip-link" data-tip="Second link tip">Second link</a>
+            <a href="#" class="tooltip-link" data-tip="Third link tip">Third link</a>
+        </div>
+    </div>
 </main>
 <footer>
-
+    <div class="my-container">
+        <div class="copyright">
+            <img src="images/copyright.png" alt="copyright">
+            Vadim Kuznetsov
+        </div>
+    </div>
 </footer>
 <script
         src="https://code.jquery.com/jquery-2.2.4.min.js"
